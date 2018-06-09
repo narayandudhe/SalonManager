@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.salonmanageer.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:background="@drawable/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:weightSum="2.0">
+        <TextView android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_viewcust" android:background="@color/colorGreen" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Customer" android:drawableTop="@drawable/customer" android:drawablePadding="5dp" android:layout_weight="1.0" />
+        <TextView android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_viewemp" android:background="@color/design_textinput_error_color_dark" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Employee" android:drawableTop="@drawable/employee" android:drawablePadding="5dp" android:layout_weight="1.0" />
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:weightSum="2.0">
+        <TextView android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_viewbook" android:background="@color/design_textinput_error_color_dark" android:paddingLeft="3dp" android:paddingTop="6dp" android:paddingRight="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="Booking" android:drawableTop="@drawable/booking" android:drawablePadding="5dp" android:layout_weight="1.0" />
+        <TextView android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_viewservice" android:background="@color/colorGreen" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="Services" android:drawableTop="@drawable/services" android:drawablePadding="5dp" android:layout_weight="1.0" />
+    </LinearLayout>
+
+    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:background="@color/opaque_black" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next" android:layout_weight="0.5" android:rotation="180.0" />
+        <TextView android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_formcust" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Customer Form" android:drawableTop="@drawable/customer_form" android:drawablePadding="5dp" android:layout_weight="1.0" />
+        <TextView android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_formemp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Employee Form" android:drawableTop="@drawable/emp_form" android:drawablePadding="5dp" android:layout_weight="1.0" />
+        <TextView android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_formbook" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Booking Form" android:drawableTop="@drawable/booking_form" android:drawablePadding="5dp" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/next" android:layout_weight="0.5" />
+
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@drawable/footer_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_alignParentBottom="true" />
+    </RelativeLayout> />
+
+
+
+
+</LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

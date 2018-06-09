@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/booking_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:background="@color/opaque_darkbrown" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <ImageView android:padding="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookcustomer" />
+            <TextView android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_nm" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="flkdjfg" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/opaque_brown" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookemp" />
+            <TextView android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_empnm" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="flkdjfg" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/opaque_darkbrown" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:padding="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bookdate" />
+            <TextView android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_date" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="flkdjfg" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/opaque_darkgreen" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:padding="5dp" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Service Details" android:drawableLeft="@drawable/services_icon" android:drawablePadding="7dp" />
+            <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <android.support.v7.widget.RecyclerView android:id="@+id/recycleView_service" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/opaque_black" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:padding="5dp" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Charge" />
+            <View android:background="@drawable/dotted_whileline" android:layout_width="match_parent" android:layout_height="match_parent" />
+            <LinearLayout android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@drawable/green_textbox" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="7dp">
+                <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="₹" />
+                <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <TextView android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textview_total" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    </RelativeLayout>
+

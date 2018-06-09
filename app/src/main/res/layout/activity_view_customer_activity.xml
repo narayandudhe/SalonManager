@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/customerformbg"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycleView_customer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+    <TextView android:textColor="@color/colorPrimaryDark"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/textView_norecord"
+        android:padding="7dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dfgfg"
+        android:drawableTop="@drawable/nobooking"
+        android:drawablePadding="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <android.support.design.widget.FloatingActionButton
+        android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+
+        android:layout_alignBottom="@+id/recycleView_customer"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+

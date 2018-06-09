@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/customerformbg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/ktch" />
+            <LinearLayout android:orientation="vertical" android:background="@color/colorGreen" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Service Name" />
+                <EditText android:id="@+id/editText_servicenm" android:background="@drawable/border_brown" android:paddingLeft="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:hint="Service Name" android:drawableLeft="@drawable/typeicon" android:drawablePadding="10dp" />
+            </LinearLayout>
+            <Button android:textColor="#ffffff" android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/button_submit" android:background="@drawable/submitbtn" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="submit" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

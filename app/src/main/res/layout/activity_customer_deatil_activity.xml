@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/customerformbg">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.salonmanager.RoundedImageView
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:id="@+id/imageView_cust"
+                android:background="@drawable/border_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true" />
+            <LinearLayout android:background="@color/opaque_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView android:padding="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/custname" />
+                <View android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView android:textColor="#ffffff"
+                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_nm" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="flkdjfg" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/opaque_darkgreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView android:padding="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gender" />
+                <View android:background="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView android:textColor="#ffffff"
+                    android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textVIew_gender" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="flkdjfg" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/opaque_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView android:padding="7dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/custdob" />
+                <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <TextView android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_dob" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="flkdjfg" />
+            </LinearLayout>
+            <LinearLayout  android:background="@color/opaque_darkgreen" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:padding="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/custphone" />
+                <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <TextView android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_phone" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="flkdjfg" />
+            </LinearLayout>
+            <LinearLayout  android:background="@color/opaque_green" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:padding="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/custaddress" />
+                <View android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <TextView android:textColor="#ffffff" android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_add" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="flkdjfg" />
+            </LinearLayout>
+            <LinearLayout  android:background="@drawable/user_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:src="@drawable/user" />
+                <TextView android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@drawable/rectange_gradient" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="User Specification" />
+                <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" />
+                <RelativeLayout android:id="@+id/ll_type" android:background="@color/colorOpacitygrey" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/border_white" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hairtype" />
+                        <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Hair Type" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/brown_rectangle" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/haircolor" />
+                        <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Hair Color" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:orientation="vertical" android:background="@drawable/border_white" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/white" />
+                        <TextView android:textSize="10sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Skin Color" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:background="@color/colorOpacitygrey" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/textView_hairtype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Hair Type" android:layout_alignParentLeft="true" />
+                    <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_haircolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Hair Color" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end" android:id="@+id/textView_skincolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Skin Type" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+                <View android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <TextView android:textColor="#ffffff" android:id="@+id/textView_desc" android:background="@color/colorOpacitygrey" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="dfgdfghfg" android:drawableLeft="@drawable/custtype" android:drawablePadding="7dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
